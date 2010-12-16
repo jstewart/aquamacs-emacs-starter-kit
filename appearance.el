@@ -2,7 +2,7 @@
 ;;
 ;; Choose a theme, etc.
 ;;
-;; Walter McGinnis, 2009-06-28
+;; Walter McGinnis, 200`9-06-28
 ;;
 ;; http://github.com/walter/aquamacs-emacs-starter-kit
 
@@ -22,9 +22,14 @@
 ;; the relevant load and setting lines for the theme
 ; (require 'color-theme)
 ; (color-theme-initialize)
-; (load-file (concat kitfiles-dir "/vendor" "/twilight.el"))
-; (color-theme-twilight)
-; (load-file (concat kitfiles-dir "/vendor" "/blackboard.el"))
-; (color-theme-blackboard)
+;; (load-file (concat kitfiles-dir "/vendor" "/twilight.el"))
+;; (color-theme-twilight)
+
+;; (load-file (concat kitfiles-dir "/vendor" "/blackboard.el"))
+;; (color-theme-blackboard)
+
+
+(load-file (concat kitfiles-dir "/vendor" "/color-theme-ir-black.el"))
+(color-theme-ir-black)
 
 (provide 'appearance)
