@@ -22,17 +22,18 @@
 (require 'starter-kit-elpa)
 
 ;;;;; Vendor libs
-
 ;; general coding/editing niceties
+(require 'anything-setup)
 (require 'line-num)
 (require 'multi-term-setup)
-(require 'undo-tree)
 (require 'vimpulse)
 (require 'whitespace)
 ;; (require 'tabs)
 
 ;; Additional Modes
 (require 'nxhtml)
+(require 'undo-tree)
+(global-undo-tree-mode)
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 

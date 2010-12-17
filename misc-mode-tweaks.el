@@ -33,6 +33,10 @@
      (ignore-errors (require 'ruby-compilation))
      (setq ruby-use-encoding-map nil)
      (add-hook 'ruby-mode-hook 'inf-ruby-keys)
+     (add-hook 'ruby-mode-hook
+	       (lambda ()
+		 (define-key ruby-mode-map "\C-c#" 'comment-or-uncomment-region)
+		 ))
      (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
      ))
 
@@ -43,5 +47,8 @@
 ;; http://github.com/technomancy/emacs-starter-kit/(github commit gobbly gook)/elpa-to-submit/ri.el
 ;; may slow Aquamacs startup
 (require 'ri)
+
+;; Use Ack for rgrep
+(custom-set-variables '(grep-program "ack -H -a --nogroup --nocolor"))
 
 (provide 'misc-mode-tweaks)

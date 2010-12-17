@@ -42,6 +42,7 @@
 
 ;; So good!
 (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key [f8] 'anything)
 
 (global-set-key (kbd "C-c q") 'join-line)
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
