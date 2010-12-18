@@ -46,5 +46,6 @@
 
 (global-set-key (kbd "C-c q") 'join-line)
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
+(global-set-key (kbd "C-,") 'zencoding-expand-line)
 
 (provide 'custom-keys)

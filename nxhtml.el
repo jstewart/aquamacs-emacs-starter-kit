@@ -3,7 +3,7 @@
 
 (setq
  nxhtml-global-minor-mode t
- mumamo-chunk-coloring 'submode-colored
+ mumamo-chunk-coloring '99
  nxhtml-skip-welcome t
  indent-region-mode t
  rng-nxml-auto-validate-flag nil

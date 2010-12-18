@@ -36,7 +36,8 @@
 (global-undo-tree-mode)
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-
+(require 'zencoding-mode)
+(add-hook 'sgml-mode-hook 'zencoding-mode)
 ;;;;; end Vendor libs
 
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
