@@ -1,12 +1,15 @@
-;; Init rails snippets
+;; Init yasnippet
+(add-to-list 'load-path (concat kitfiles-dir "/vendor/yasnippet-0.6.1c"))
+
 (require 'yasnippet)
 (yas/initialize)
+(yas/load-directory (concat kitfiles-dir "/vendor/yasnippet-0.6.1c/snippets"))
 
-;; (yas/load-directory yas/root-directory)
-(yas/load-directory
- (concat (file-name-directory (or load-file-name buffer-file-name))
- 	 "vendor/rails-snippets/")
-)
+;; When entering rinari-minor-mode, consider also the snippets in the
+;; snippet table "rails-mode"
+(add-hook 'rinari-minor-mode-hook
+          #'(lambda ()
+              (setq yas/mode-symbol 'erb-mode)))
 
 ;;; If you are using MuMaMo or nxml, you will need to tweak the mumamo
 ;;; keymap to let tab work for yasnippets

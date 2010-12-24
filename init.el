@@ -28,12 +28,11 @@
 (require 'multi-term-setup)
 (require 'vimpulse)
 (require 'whitespace)
-;; (require 'tabs)
+(require 'undo-tree)
+(global-undo-tree-mode)
 
 ;; Additional Modes
 (require 'nxhtml)
-(require 'undo-tree)
-(global-undo-tree-mode)
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (require 'zencoding-mode)
@@ -41,13 +40,11 @@
 ;;;;; end Vendor libs
 
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
-(require 'adjust-path)
 (require 'appearance)
 (require 'ido-setup)
 (require 'custom-keys)
 (require 'misc-mode-tweaks)
 (require 'org-mode-stuff)
-;; (require 'override-aquamacs-to-be-more-emacsy)
 (require 'prefer-utf)
 (require 'useful-functions)
 (require 'snippets)
