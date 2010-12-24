@@ -48,6 +48,7 @@
 (require 'prefer-utf)
 (require 'useful-functions)
 (require 'snippets)
+(require 'erc-setup)
 
 ;;;;; end Aquamacs Emacs Starter Kit specific customizations
 (provide 'init)

@@ -11,14 +11,6 @@
 			`((,(kbd "RET") . erc-send-current-line))))
 (add-hook 'erc-mode-hook 'ted-viper-erc-hook)
 
-
-;; Nickserv identify
-(add-hook 'erc-after-connect
-    	  '(lambda (SERVER NICK)
-    	     (cond
-    	      ((string-match "freenode\\.net" SERVER)
-    	       (erc-message "PRIVMSG" "NickServ identify sootroom")))))
-
 ;; Matching
 (require 'erc-match)
 (setq erc-keywords '("jstew"))
